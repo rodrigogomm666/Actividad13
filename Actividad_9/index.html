@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Fuentes tipograficas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2f?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"  
+        rel="stylesheet">
+
+        <!--Hojas de estilos-->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./icons/fontawesome-free-6.7.2-web/css/all.min.css">
+       <!-- <link rel="stylesheet" href="./css/styles_temp.css"> -->
+
+        <!--scripts-->
+        <script src="./js/modernizr-custom.js"></script>
+
+    <title>Actividad_9</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <nav class="menu">
+                <a href="">Inicio</a>
+                <a href="">Acerca de</a>
+                <a href="">Trabajos</a>
+                <a href="">Habilidades</a>
+                <a href="">Contacto</a>
+            </nav>
+            <div class="container-text">
+                <div class="text">
+                    <h1 class="name">Diana Paula BN</h1>
+                    <h2 class="profession">Estudiente de Ing.Software</h2>
+                    <button class="btn-cv">Descargar CV</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Para el contenido principal tambien puede usar la etiqueta <main>-->
+        <main>
+            <section id="section-about">
+                <div class="container">
+                    <div class="photo">
+                        <img src="./img/foto_dianaBaza.jpg" width="200px" height="200px" alt="Diana Paula BN">
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Acerca de</h3>
+                        <p>This is <span class="bold">Photoshop's version</span> of Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet. Aenean sollicitudin, lorem quis<span class=""bold>bibendum auctor</span>,
+                            nisi elit consequat Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="section-jobs">
+                <div class="container">
+                    <h3 class="titulo">Trabajos</h3>
+                    <div class="container-jobs">
+                            <div class="job">
+                                <div class="thumb">
+                                    <img src="img/trabajos/1.jpg" width="250px" height="250px" alt="Lorem Ipsum">
+                                </div>
+                                <div class="description">
+                                    <p class="name">Lorem Ipsum</p>
+                                    <p class="category">HTML - CSS - PHP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id="section-skills">
+                <div class="container">
+                    <h3 class="title">Habilidades</h3>
+                    <div class="container-skills">
+                        <div class="skill">
+                            <div class="icon-skill">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="description">
+                                <p class="name">HTML5</p>
+                                <P class="category">Aprendiz</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <section id="section-contact">
+                    <h3 class="title">contacto</h3>
+                    <form class="form-mensage" action="">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Correo" required>
+                        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                        <input class="btn-send-msg" type="submit" value="Enviar"> 
+                    </form>
+                </section>
+            </div>
+            <section id="section-social-Media">
+                <div class="container">
+                    <a class="facebook" href="http://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="instagram" href="http://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="pinterest" href="http://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </section>
+        </footer>
+       
+        
+</body>
+
+</header>
+
+</html>

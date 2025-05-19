@@ -1,0 +1,451 @@
+/* --- diseño general----*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*---footer---*/
+footer {
+    background: #f2f2f2;
+    color: #fff;
+    padding: 0px 0px;
+}
+
+body {
+    background: #ffff;
+    font-family: "open Sans", sans-serif, Arial;
+    font-size: 16px;
+}
+
+/*---container---*/
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*----header----*/
+
+header {
+    background-image: linear-gradient(#1e2838 30%, #3c5171 90%);
+    background-size: 60%;
+    max-height: 600px;
+}
+
+/*---menu---*/
+header .menu {
+    margin: 40px;
+    text-align: center;
+}
+
+header.menu a {
+    background: rgb(52, 219, 211);
+    margin: 0 20px;
+    color: #fff;
+    padding: 9px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/*---- Texto ----*/
+header .container-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 0 150px;
+}
+
+header .container-text .text {
+    background-color: #2252ac;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .container-text .text .name{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .container-text .text .profession {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+header .container-text .text .btn-cv {
+    background: #42c222;
+    cursor: pointer;
+    line-height: 45px;
+    max-width: 160px;
+    text-transform: uppercase;
+    width: 100%;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+}
+
+header .container-text .text .btn-cv:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(29, 221, 205, 0),
+    0 0 20px rgba(255, 255, 255, 0.2);
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 2px #427388;
+}
+
+/*---main----*/
+
+main .container {
+    overflow: visible;
+}
+
+/*---Acerca de ----*/
+main #section-about {
+    text-align: center;
+}
+
+/*---estilo de foto----*/
+main #section-about .photo {
+    margin-top: -100px;
+}
+
+main #section-about .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: top;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+/* estilos texto de la seccion about*/
+
+
+main #section-about .text {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+main #section-about .text .title {
+    font-size: 34px;
+    margin-bottom: 40px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+
+main #section-about .text .bold {
+    color: #3895ea;
+    text-decoration: underline;
+}
+
+/* seccion trabajos */
+main #section-jobs {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+main #section-jobs .container{
+    overflow: hidden;
+}
+
+main #section-jobs .title {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    color: #3895ea;
+    text-align: center; 
+}
+
+/*estilos del contenedor de los trabajos */
+main #section-jobs .container-jobs {
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main #section-jobs .container-jobs .job{
+    width: 23%;
+    padding: 0px 0px 15px 0px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    transition: all 0.25s;
+}
+
+main #section-jobs .container-jobs .job .img-job {
+    vertical-align: top;
+    width: 100%;
+} 
+
+main #section-jobs .container-jobs.job:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
+} 
+
+main #section-jobs .container-jobs .job .description {
+    text-align: center;
+}
+
+main #section-jobs .container-jobs .job .description .name {
+    font-weight: 700;
+    color: #3895ea;
+    margin-bottom: 10px;
+}
+
+main #section-jobs .container-jobs .job .description .category {
+    font-size: 14px;
+    color: #636363;
+}
+
+/* seccion habilidades */
+main #section-skills {
+    padding: 60px 0;
+    margin-bottom: 20px;
+}
+
+main #section-skills .container {
+    overflow: hidden;
+}
+
+main #section-skills .title {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+
+main #section-skills .container-skills {
+    margin-bottom: 60px;
+    display:flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #section-skills .container-skills .skill {
+    margin: clamp(5px ,5px, 10px);
+    display: flex;
+    align-items: justify-content;
+    width: 23%;
+}
+
+main #section-skills .container-skills .skill .icon-skill {
+    padding: 0px 5px;
+    width: 50%;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+main #section-skills .container-skills .skill .icon-skill i {
+    width: 100%;
+    font-size: 40px;
+    transition: all 0.75s;
+}
+
+main #section-skills .container-skills .skill .icon-skill i:hover {
+    transform: totate(360deg);
+}
+
+main #section-skills .container-skills .skill .description {
+    align-items: right;
+    width: 100%;
+}
+
+main #section-skills .container-skills .skill .description .name {
+    font-weight: 700;
+    color: #3895ea;
+}
+
+main #section-skills .container-skills .skill .description .category {
+    font-size: 14px;
+    color: #636363;
+}
+
+/*seccion contactos*/
+
+footer #section-contact {
+    padding: 60px 0px;
+}
+
+footer #section-contact .title {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    color:#3895ea;
+    text-align: center;
+}
+
+footer #section-contact .form.message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer #section-contact .form-message input[type="text"],
+footer #section-contact .form-message input[type="email"],
+footer #section-contact .form-message textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer #section-contact .form-message input[type="text"],
+footer #section-contact .form-message input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer #section-contact .form-message textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    margin-bottom: 15px;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+footer  #section-contact .form-message .btn-send-msg {
+    margin: auto;
+    background: #3895ea;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+}
+
+footer #section-contact .form-message .btn-send-msg:hover {
+    background: #387bea;
+}
+
+/* seccion redes sociales*/
+
+footer #secion-social-Media {
+    background-image: linear-gradient(#1e2838 50%, #3c5171 90%);
+    padding: 60px 0;
+}
+
+footer #section-social-Media .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer #section-social-Media .container a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    font-size: 30px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 20px;
+    border-radius: 3px;
+}
+
+footer #section-social-Media .container .facebook:hover {
+    background: #55acee;
+}
+
+footer #section-social-Media .container .instagram:hover{
+    background: #3f729b;
+}
+
+footer #section-social-Media .container .pinterest:hover{
+    background: #cd201f;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 800px)  {
+    header .menu{
+        text-align: center;
+    }
+
+    main #section-jobs .container-jobs .job {
+        width: 46%;
+    }
+
+    main #section-skills .container-skills .skill{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    harder .container-text .text .name {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .container-text .text .name{
+        font-size: 35px;
+    } 
+
+    header .container-text .text .profession {
+        font-size: 18px;
+    }
+
+    footer #section-social-Media .container {
+        flex-wrap: wrap;
+    }
+
+    footer #section-social-Media .container a {
+        padding: 20px;
+    }
+}
+.container-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.job {
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.thumb img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
